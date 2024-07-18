@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Keeper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Note Keeper</h1>
+        <nav>
+            <button id="createNoteBtn">Create Note</button>
+            <button id="searchBtn">Search Notes</button>
+            <button id="labelViewBtn">Label View</button>
+            <button id="archivedNotesBtn">Archived Notes</button>
+            <button id="trashNotesBtn">Trash Notes</button>
+        </nav>
+    </header>
+    <main>
+        <section id="noteSection"></section>
+        <section id="searchSection" class="hidden">
+            <input type="text" id="searchInput" placeholder="Search notes...">
+            <div id="searchResults"></div>
+        </section>
+        <section id="labelViewSection" class="hidden">
+            <h2>Label View</h2>
+            <div id="labelResults"></div>
+        </section>
+        <section id="archivedSection" class="hidden">
+            <h2>Archived Notes</h2>
+            <div id="archivedNotes"></div>
+        </section>
+        <section id="trashSection" class="hidden">
+            <h2>Trash Notes</h2>
+            <div id="trashNotes"></div>
+        </section>
+    </main>
+    <div id="noteModal" class="hidden">
+        <textarea id="noteContent" placeholder="Write your note here..."></textarea>
+        <div>
+            <button id="saveNoteBtn">Save Note</button>
+            <button id="closeModalBtn">Close</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
